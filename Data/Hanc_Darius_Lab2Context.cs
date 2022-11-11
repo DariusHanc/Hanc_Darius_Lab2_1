@@ -17,5 +17,9 @@ namespace Hanc_Darius_Lab2.Data
         public virtual DbSet<Author> Author { get; set; } = null!;
 
         public virtual DbSet<Category> Category { get; set; } = null!;
+
+        public DbSet<Hanc_Darius_Lab2.Models.Member> Member { get; set; }
+
+        public DbSet<Hanc_Darius_Lab2.Models.Borrowing> Borrowing { get; set; }
     }
 }
